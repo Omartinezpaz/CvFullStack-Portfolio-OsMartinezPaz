@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- (El head permanece igual que en tu código original) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="web personal profesional."/>
+  <meta name="keywords" content="web personal, profesional, portfolio, proyectos, habilidades, experiencia"/>
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://bloq-personal.example.com/"/>
+  <meta property="og:title" content="BLOQ - Portafolio Profesional"/>
+  <meta property="og:description" content="web personal profesional."/>
+  <meta property="og:image" content="https://tetris-official.example.com/multimedia/imagenes/tetris-official-logo.png"/>
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:url" content="https://bloq-personal.example.com/"/>
+  <meta property="twitter:title" content="BLOQ - Portafolio Profesional"/>
+  <meta property="twitter:description" content="web personal profesional."/>  
+  <meta property="twitter:image" content="https://bloq-personal.example.com/multimedia/imagenes/bloq-personal-logo.png"/>
+  
+  <title>BLOQ - Portafolio Profesional</title>
+  
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet"/>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="index.css"/>
+  
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  
+  <!-- Estructura de datos -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BLOQ - Portafolio Profesional",
+    "description": "web personal profesional.",
+    "genre": "Portfolio",
+    "author": {
+      "@type": "Person",
+      "name": "Juan Pérez"
+    },
+    "datePublished": "2023-01-01",
+    "applicationCategory": "WebSite",
+    "operatingSystem": "All",
+    "url": "https://bloq-personal.example.com/"
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="site-header__logo" href="#hero">FS</a>
+
+    <nav class="site-header__nav" aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button
+      class="site-header__theme-toggle"
+      type="button"
+      aria-label="Cambiar tema"
+    >
+      🌓
+    </button>
+  
+  </header>
+
+  <main id="main-content">
+    <!-- Hero / Presentación -->
+     
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+ 
+      <div class="hero__content">
+        <h1 id="hero-title">Oscar J. Martínez Paz</h1>
+        <p class="hero__tagline">Desarrollador Web Junior (QA)</p>
+        <p class="hero__subtitle">
+          Profesional en Tecnología y Gestión Estratégica, con experiencia en administración 
+          de bases de datos, dirección tecnológica y soporte institucional. 
+          ctualmente en transición hacia el área de Programación JS, (QA), 
+          con enfoque en automatización de pruebas, validación de procesos y
+           documentación clara para equipos técnicos y no técnicos. Destacado 
+           por la capacidad de transformar procesos complejos en soluciones 
+           reproducibles y eficientes, con actitud proactiva y orientación a 
+           resultados.
+        </p>
+        <div class="seccion-divisor"></div>
+<div class="hero__contact-info">
+  <!-- Contenedor para los detalles de contacto -->
+  <div class="contact-details">
+    <p>Email: <a href="mailto:ozmartinezpaz@gmail.com">ozmartinezpaz@gmail.com</a></p>
+    <p>Teléfono: +58 424 205 0125</p>
+    <p>Discord: omartinezpaz</p>
+    <p>Ubicación: Caracas, Venezuela</p>
+  </div>
+</div>
+      </div>
+      <div class="footer-divisor"></div>
+      <aside class="hero__aside" aria-label="Foto de perfil">
+        <img
+          src="Imagen de WhatsApp 2024-10-17 a las 10.48.05_9581e4f5.jpg"
+          alt="Foto de Oscar J. Martínez Paz"
+          class="hero__avatar" height="300" width="300"
+        />
+      </aside>
+    </section>
+
+    <!-- Proyectos -->
+    <section
+      
+      id="projects"
+      class="section section--alt"
+      aria-labelledby="projects-title"
+    >
+      <div class="seccion-divisor"></div>
+      <div class="section__header">
+        <div class="footer-divisor"></div>
+        <h2 id="projects-title">Proyectos destacados</h2>
+        <p>
+          <div class="footer-divisor"></div>
+          Selección de proyectos full stack que muestran mi experiencia en
+          frontend, backend y despliegue.
+        </p>
+      </div>
+      <div class="seccion-divisor"></div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <header class="project-card__header">
+            <h3>TaskFlow</h3>
+            <p class="project-card__role">
+              Full Stack · SaaS de gestión de tareas
+            </p>
+          </header>
+          <p class="project-card__description">
+            Aplicación para equipos remotos con tableros Kanban, notificaciones
+            en tiempo real y autenticación JWT.
+          </p>
+          <ul class="project-card__stack">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>PostgreSQL</li>
+            <li>WebSockets</li>
+          </ul>
+          <footer class="project-card__footer">
+            <a
+              href="https://demo-taskflow.com"
+              class="project-card__link"
+              target="_blank"
+              rel="noopener"
+            >
+              Ver demo
+            </a>
+            <a
+              href="https://github.com/tu-usuario/taskflow"
+              class="project-card__link"
+              target="_blank"
+              rel="noopener"
+            >
+              Ver código
+            </a>
+          </footer>
+        </article>
+
+        <!-- Repite <article> para más proyectos -->
+      </div>
+    </section>
+      <div class="seccion-divisor"></div>
+    <!-- Skills -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="section__header">
+        <div class="footer-divisor"></div>
+        <h2 id="skills-title">Habilidades Técnicas y Actitudes Clave</h2>
+        <div class="footer-divisor"></div>
+        <p>
+          Conjunto de herramientas y cualidades que utilizo en el día a día para construir
+          productos robustos y colaborar eficazmente.
+        </p>
+      </div>
+      <div class="seccion-divisor"></div>
+      <div class="skills-layout">
+        <section class="skills-group" aria-label="QA y Bases de Datos">
+          <h3>QA y Bases de Datos</h3>
+          <ul class="tag-list">
+            <li>QA Manual: Casos de prueba, validación funcional, documentación de bugs.</li>
+            <li>QA Automation (Junior): Scripts básicos</li>
+            <li>PostgreSQL</li>
+            <li>SQL Server</li>
+            <li>MySQL</li>
+          </ul>
+        </section>
+
+        <section class="skills-group" aria-label="Herramientas y DevOps">
+          <h3>Herramientas y DevOps</h3>
+          <ul class="tag-list">
+            <li>Jira</li>
+            <li>Postman</li>
+            <li>Visual Studio Code</li>
+            <li>Cursor</li>
+            <li>TRAE</li>
+            <li>GitHub Actions</li>
+            <li>Excel</li>
+            <li>Docker</li>
+            <li>CI/CD (GitHub Actions)</li>
+            <li>AWS / Vercel</li>
+            <li>Monitorización básica</li>
+          </ul>
+        </section>
+
+        <section class="skills-group" aria-label="Sistemas Operativos y Documentación">
+          <h3>Sistemas Operativos y Documentación</h3>
+          <ul class="tag-list">
+            <li>Linux</li>
+            <li>Mac OS</li>
+            <li>Windows</li>
+            <li>Diagramas de flujo</li>
+            <li>Tablas</li>
+            <li>Materiales visuales explicativos</li>
+          </ul>
+        </section>
+
+        <section class="skills-group" aria-label="Actitudes Clave">
+          <h3>Actitudes Clave</h3>
+          <ul class="tag-list">
+            <li>Atención al detalle y pensamiento crítico.</li>
+            <li>Curiosidad por aprender nuevas herramientas de automatización.</li>
+            <li>Comunicación clara con equipos técnicos y no técnicos.</li>
+            <li>Proactividad y compromiso con la mejora continua.</li>
+            <li>Adaptabilidad a metodologías ágiles.</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+      <div class="seccion-divisor"></div>
+    <!-- Resumen Profesional -->
+    <section
+      id="summary"
+      class="section section--alt"
+      aria-labelledby="summary-title"
+    >
+      <div class="section__header">
+        <div class="footer-divisor"></div>
+        <h2 id="summary-title">Resumen Profesional</h2>
+        <div class="footer-divisor"></div>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-layout__main">
+          <p>
+            Profesional en Tecnología y Gestión Estratégica, con experiencia en administración de bases de datos, dirección tecnológica y soporte institucional. Actualmente en transición hacia el área de Programación JS, (QA), con enfoque en automatización de pruebas, validación de procesos y documentación clara para equipos técnicos y no técnicos. Destacado por la capacidad de transformar procesos complejos en soluciones reproducibles y eficientes, con actitud proactiva y orientación a resultados.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia Laboral -->
+    <section
+      id="experience"
+      class="section"
+      aria-labelledby="experience-title"
+    >
+      <div class="seccion-divisor"></div>
+      <div class="section__header">
+        <div class="footer-divisor"></div>
+        <h2 id="experience-title">Experiencia Laboral Relevante</h2>
+      </div>
+      <div class="seccion-divisor"></div>
+      <div class="experience-list">
+        <article class="experience-card">
+          <h3>Analista de Base de Datos / Coordinador Electoral</h3>
+          <p class="experience-card__company">Pequiven – Venezuela</p>
+          <p class="experience-card__duration">2005 – Actual</p>
+          <ul class="experience-card__description">
+            <li>Validación y auditoría de sistemas de votación en más de 20 elecciones y 2 referendos.</li>
+            <li>Administración y caracterización de resultados electorales, con identificación de brechas y metas.</li>
+            <li>Diseño de procesos internos y documentación técnica para equipos organizacionales.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <h3>Director General de Tecnología</h3>
+          <p class="experience-card__company">Ministerio del Poder Popular para la Educación (MPPE)</p>
+          <p class="experience-card__duration">2023 – 2024</p>
+          <ul class="experience-card__description">
+            <li>Recuperación de infraestructura tecnológica y normalización de servicios de red.</li>
+            <li>Implementación de sistemas internos de autogestión y beneficios para trabajadores.</li>
+            <li>Lanzamiento de plataformas educativas y portales institucionales.</li>
+            <li>Aplicación de medidas de ciberseguridad frente a millones de intentos de ataque.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <h3>Director General</h3>
+          <p class="experience-card__company">Activity Networks – Panamá</p>
+          <p class="experience-card__duration">2018 – 2019</p>
+          <ul class="experience-card__description">
+            <li>Dirección de proyectos digitales y redes sociales.</li>
+            <li>Formación de equipos para medición de actividad digital y estrategias de marca.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Educación -->
+    <section
+      id="education"
+      class="section section--alt"
+      aria-labelledby="education-title"
+    >
+      <div class="seccion-divisor"></div>
+      <div class="section__header">
+        <div class="footer-divisor"></div>
+        <h2 id="education-title">Educación</h2>
+      </div>
+      <div class="seccion-divisor"></div>
+      <div class="education-list">
+        <article class="education-card">
+          <h3>Programación Full Stack</h3>
+          <p class="education-card__institution">EDtecnica</p>
+          <p class="education-card__duration">(En curso)</p>
+        </article>
+        <article class="education-card">
+          <h3>Administración, Mención Organización y Sistemas</h3>
+          <p class="education-card__institution">Universidad IUDAG, Distrito Capital</p>
+          <p class="education-card__duration">(En curso)</p>
+        </article>
+        <article class="education-card">
+          <h3>Especialización en Base de Datos</h3>
+          <p class="education-card__institution">Benllisoft, Distrito Capital</p>
+        </article>
+        <article class="education-card">
+          <h3>Bachiller en Ciencias</h3>
+          <p class="education-card__institution">Unidad Educativa J.J. Trejo, Maracaibo, Venezuela</p>
+        </article>
+      </div>
+    </section>
+      <div class="seccion-divisor"></div>
+    <!-- Objetivo -->
+    <section id="objective" class="section" aria-labelledby="objective-title">
+      <div class="section__header">
+        <div class="footer-divisor"></div>
+        <h2 id="objective-title">Objetivo</h2>
+        <div class="footer-divisor"></div>
+      </div>
+      <div class="about-layout">
+        <div class="about-layout__main">
+          <p>
+            Consolidar mi experiencia, aportando en la validación y documentación de procesos, mientras desarrollo mayor dominio en frameworks de automatización y pruebas avanzadas.
+          </p>
+        </div>
+      </div>
+    </section>
+      <div class="seccion-divisor"></div>
+
+  </main>
+
+  <footer class="site-footer"> 
+    <p>&copy; 2026 Oscar J. Martínez Paz. Todos los derechos reservados.</p>
+      <!-- Contenedor para los iconos sociales -->
+      <div class="footer-divisor"></div>
+  <div class="social-links">
+    <a href="https://github.com/omartinez" target="_blank" rel="noopener noreferrer" aria-label="GitHub" img src="../github.webp" alt="GitHub" width="30" height="30">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/oscar-martinez-paz-18751b274" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" img src="../linkedin.webp" alt="LinkedIn" width="30" height="30"> 
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://wa.me/584242050125" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" img src="../whatsapp.webp" alt="WhatsApp" width="30" height="30">    
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="mailto:ozmartinezpaz@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Gmail" img src="../gmail.webp" alt="Gmail" width="30" height="30">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+  <p>&copy; Caracas, Venezuela - 2026</p>
+  </footer>
+</body>
