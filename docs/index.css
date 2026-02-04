@@ -520,3 +520,133 @@ seccion-divisor::hover {
 
 /*  -----------------------------------------------*/
 
+/* Media Queries para Tablets (hasta 768px) */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 0.8rem 1rem;
+  }
+
+  .site-header__nav a {
+    font-size: 1.6rem;
+  }
+
+  .hero__title {
+    font-size: clamp(2.2rem, 4.5vw, 3rem);
+  }
+
+  .hero__tagline {
+    font-size: 1.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.3rem;
+  }
+
+  .contenedor-hero__subtitle {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Una columna para tablets */
+    margin-left: auto; /* Eliminar margen fijo */
+    margin-right: auto; /* Eliminar margen fijo */
+    max-width: 90%; /* Ajustar ancho máximo */
+  }
+
+  .experience-list,
+  .education-list {
+    max-width: 90%; /* Ajustar ancho máximo */
+  }
+
+  .section__header {
+    max-width: 90%; /* Ajustar ancho máximo */
+  }
+}
+
+/* Media Queries para Móviles (hasta 576px) */
+@media (max-width: 576px) {
+  .site-header {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .site-header__nav .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .site-header__nav a {
+    font-size: 1.4rem;
+  }
+
+  .hero__title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .hero__tagline {
+    font-size: 1.2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero__contact-info p {
+    font-size: 1.1rem;
+  }
+
+  .social-links a {
+    font-size: 1.3rem;
+  }
+
+  .section {
+    padding: 0.8rem 0.8rem;
+  }
+
+  .project-card,
+  .experience-card,
+  .education-card {
+    padding: 1.2rem;
+  }
+
+  .project-card__stack li {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .about-layout__main p {
+    font-size: 1.1rem;
+  }
+
+  .experience-card h3,
+  .education-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .experience-card__company,
+  .education-card__institution {
+    font-size: 1.1rem;
+  }
+
+  .experience-card__duration,
+  .education-card__duration {
+    font-size: 1rem;
+  }
+
+  .experience-card__description,
+  .education-card__description {
+    font-size: 1rem;
+  }
+
+  .site-footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
